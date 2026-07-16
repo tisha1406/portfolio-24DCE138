@@ -1,0 +1,8 @@
+.projects-list { display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; align-items:stretch }
+.project-card {
+  border-radius:12px; padding:16px; background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.04); box-shadow:0 10px 30px rgba(2,6,23,0.06); transition: transform 260ms ease, box-shadow 260ms ease;
+}
+.project-card:hover { transform: translateY(-8px); box-shadow:0 20px 50px rgba(2,6,23,0.12) }
+
+@media (max-width:900px) { .projects-list { grid-template-columns: repeat(2, 1fr) } }
+@media (max-width:600px) { .projects-list { grid-template-columns: 1fr } }
