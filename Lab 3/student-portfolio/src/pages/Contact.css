@@ -1,0 +1,16 @@
+.contact-form {
+  max-width:560px; margin: 12px auto; padding:22px; border-radius:12px; background: rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.04); box-shadow:0 10px 30px rgba(2,6,23,0.06);
+}
+
+.contact-form label { display:block; margin-bottom:8px; font-weight:600 }
+.contact-form input[type="text"], .contact-form textarea {
+  border-radius:10px; border:1px solid rgba(0,0,0,0.08); padding:12px; outline:none; transition: box-shadow 180ms ease, border-color 180ms ease;
+}
+.contact-form input[type="text"]:focus, .contact-form textarea:focus { box-shadow:0 6px 20px rgba(59,130,246,0.18); border-color:#60a5fa }
+
+.contact-actions { display:flex; gap:12px; align-items:center; margin-top:12px }
+.btn-primary { background: linear-gradient(90deg,#2563eb,#60a5fa); color:white; padding:10px 14px; border-radius:10px; border:none; cursor:pointer; transition: transform 180ms ease, box-shadow 180ms ease }
+.btn-primary:hover { transform: translateY(-4px); box-shadow:0 12px 30px rgba(37,99,235,0.18) }
+
+.char-count { margin-top:8px; color:var(--muted); font-size:0.95rem }
+.help-tooltip { margin-top:12px; padding:12px; border-radius:10px; background: linear-gradient(180deg, rgba(96,165,250,0.08), rgba(96,165,250,0.03)); border:1px solid rgba(96,165,250,0.14); }

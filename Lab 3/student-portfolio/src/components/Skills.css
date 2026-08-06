@@ -1,0 +1,16 @@
+.skills {
+  display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:center; margin:12px 0 24px 0
+}
+
+.skill-chip {
+  background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight:600;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 6px 16px rgba(2,6,23,0.06);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.skill-chip:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(2,6,23,0.12) }
