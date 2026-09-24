@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+:root { --transition-fast: 180ms cubic-bezier(.2,.9,.3,1) }
+
+* { box-sizing: border-box }
+html,body,#root { height:100% }
+body { font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; margin:0 }
+
+.content { animation: fadeIn 360ms var(--transition-fast) both }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px) }
+  to { opacity: 1; transform: translateY(0) }
+}
+
+/* make footer stick to bottom when short content */
+.app { display:flex; flex-direction:column; min-height:100vh }
+.content { flex:1 }
+
+.card { transition: transform 240ms ease, box-shadow 240ms ease }
+
+button { transition: all var(--transition-fast) }

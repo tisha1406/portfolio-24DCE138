@@ -1,0 +1,12 @@
+.footer {
+  background: linear-gradient(180deg, #0b3b91, #062b6b);
+  color: #fff;
+  padding: 18px 12px;
+  text-align:center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.footer p { margin:4px 0 }
+.social-icons { display:flex; gap:10px; justify-content:center; margin-top:8px }
+.social-placeholder { width:34px; height:34px; border-radius:8px; background:rgba(255,255,255,0.08) }

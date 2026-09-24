@@ -1,0 +1,224 @@
+/* =====================================================
+   TASK MANAGER PAGE
+===================================================== */
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.content h1 {
+  margin-bottom: 30px;
+}
+
+.content h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   CREATE TASK FORM
+===================================================== */
+
+.project-card form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.project-card input[type="text"],
+.project-card textarea,
+.project-card select {
+  padding: 12px;
+  border: 1px solid #1e3a5f;
+  border-radius: 8px;
+  background: #07132e;
+  color: #e5e7eb;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.project-card input[type="text"] {
+  width: 32%;
+}
+
+.project-card textarea {
+  width: 32%;
+  min-height: 65px;
+  resize: vertical;
+}
+
+.project-card select {
+  width: 120px;
+}
+
+.project-card input::placeholder,
+.project-card textarea::placeholder {
+  color: #7f8ba3;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.project-card button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.project-card button:hover {
+  opacity: 0.9;
+}
+
+.project-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   CREATE BUTTON
+===================================================== */
+
+.project-card form button {
+  background: #2563eb;
+  color: white;
+}
+
+.project-card form button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =====================================================
+   TASK LIST
+===================================================== */
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.projects-list .project-card {
+  padding: 25px;
+  border-radius: 12px;
+  background: #07132e;
+  border: 1px solid #101f3d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.projects-list .project-card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.projects-list .project-card p {
+  margin: 10px 0;
+  color: #cbd5e1;
+}
+
+
+/* =====================================================
+   EDIT BUTTON
+===================================================== */
+
+.projects-list .project-card button:first-of-type {
+  background: #2563eb;
+  color: white;
+}
+
+
+/* =====================================================
+   DELETE BUTTON
+===================================================== */
+
+.projects-list .project-card button:nth-of-type(2) {
+  background: #dc2626;
+  color: white;
+}
+
+.projects-list .project-card button:nth-of-type(2):hover {
+  background: #b91c1c;
+}
+
+
+/* =====================================================
+   EDIT MODE
+===================================================== */
+
+.projects-list .project-card > input[type="text"],
+.projects-list .project-card > textarea,
+.projects-list .project-card > select {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 12px;
+}
+
+.projects-list .project-card label {
+  display: block;
+  margin: 12px 0;
+  color: #e5e7eb;
+}
+
+.projects-list .project-card label input {
+  margin-right: 8px;
+}
+
+
+/* =====================================================
+   RETRY BUTTON
+===================================================== */
+
+.retry-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.retry-btn:hover {
+  background: #1d4ed8;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .content {
+    padding: 30px 20px;
+  }
+
+  .project-card form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-card input[type="text"],
+  .project-card textarea,
+  .project-card select {
+    width: 100%;
+  }
+
+  .project-card form button {
+    width: 100%;
+  }
+
+}
